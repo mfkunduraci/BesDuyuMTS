@@ -33,6 +33,7 @@
             this.usernameBox = new System.Windows.Forms.TextBox();
             this.passwordBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
+            this.registerButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,20 +78,34 @@
             // 
             // loginButton
             // 
+            this.loginButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.loginButton.Location = new System.Drawing.Point(262, 199);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(126, 43);
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
-            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // registerButton
+            // 
+            this.registerButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.registerButton.Location = new System.Drawing.Point(262, 261);
+            this.registerButton.Name = "registerButton";
+            this.registerButton.Size = new System.Drawing.Size(126, 43);
+            this.registerButton.TabIndex = 5;
+            this.registerButton.Text = "Register";
+            this.registerButton.UseVisualStyleBackColor = false;
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 451);
+            this.Controls.Add(this.registerButton);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.usernameBox);
@@ -110,6 +125,7 @@
         private System.Windows.Forms.TextBox usernameBox;
         private System.Windows.Forms.TextBox passwordBox;
         private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.Button registerButton;
     }
 }
 

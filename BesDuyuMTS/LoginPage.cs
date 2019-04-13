@@ -18,6 +18,7 @@ namespace BesDuyuMTS
         }
 
         MainPage mainPage = new MainPage();
+        RegisterPage registerPage = new RegisterPage();
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -40,6 +41,13 @@ namespace BesDuyuMTS
             {
                 MessageBox.Show("Wrong username or password!");
             }
+        }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            registerPage.Show();
+
         }
     }
 }
